@@ -27,6 +27,7 @@ var loadChecks = function(checksfile){
 var checkHtmlFile = function(htmlfile, checksfile, url){
     if (url == true){
 	$ = cheerio.load(htmlfile);
+	console.log($);
     } else { 
 	$ = cheerioHtmlFile(htmlfile);
     }
